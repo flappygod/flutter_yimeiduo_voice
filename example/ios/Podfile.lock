@@ -1,0 +1,22 @@
+PODS:
+  - Flutter (1.0.0)
+  - flutter_yimeiduo_voice (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - flutter_yimeiduo_voice (from `.symlinks/plugins/flutter_yimeiduo_voice/ios`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  flutter_yimeiduo_voice:
+    :path: ".symlinks/plugins/flutter_yimeiduo_voice/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 50d75fe2f02b26cc09d224853bb45737f8b3214a
+  flutter_yimeiduo_voice: 1eabf388188a2167c3dabb46aa855e3be8a3193b
+
+PODFILE CHECKSUM: fe0e1ee7f3d1f7d00b11b474b62dd62134535aea
+
+COCOAPODS: 1.10.1
