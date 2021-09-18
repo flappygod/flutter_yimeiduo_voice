@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4b24d1c-013b-4f67-bfaa-55b3e45e571e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="f4b24d1c-013b-4f67-bfaa-55b3e45e571e" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,18 +44,26 @@
       <option name="project" value="LOCAL" />
       <updated>1631931378281</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="增加转换">
+      <created>1631938047378</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1631938047378</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="10.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="10.0" />
+    <MESSAGE value="增加转换" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加转换" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="369" y="73" key="CommitChangelistDialog2" timestamp="1631931378059">
+    <state x="369" y="73" key="CommitChangelistDialog2" timestamp="1631938047169">
       <screen x="0" y="25" width="1680" height="951" />
     </state>
-    <state x="369" y="73" key="CommitChangelistDialog2/0.25.1680.951@0.25.1680.951" timestamp="1631931378059" />
+    <state x="369" y="73" key="CommitChangelistDialog2/0.25.1680.951@0.25.1680.951" timestamp="1631938047169" />
     <state x="661" y="400" key="Github.ShareDialog" timestamp="1631930663357">
       <screen x="0" y="25" width="1680" height="951" />
     </state>
