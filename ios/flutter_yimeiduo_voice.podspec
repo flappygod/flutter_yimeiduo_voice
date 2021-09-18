@@ -18,7 +18,7 @@ A new Flutter plugin.
     'voiceBundle' => ['Classes/voice_tts/*','Classes/voice_tts/more/*']
   }
   s.dependency 'Flutter'
-  s.platform = :ios, '8.0'
+  s.platform = :ios, '10.0'
   s.frameworks = 'UIKit','AVFoundation'
 
   # Flutter.framework does not contain a i386 slice.
