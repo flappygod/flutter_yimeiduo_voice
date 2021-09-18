@@ -16,17 +16,15 @@ public class SwiftFlutterYimeiduoVoicePlugin: NSObject, FlutterPlugin {
         //获取bundle
         let bundle = Bundle.init(for: YmdVoice.self).path(forResource: "voiceBundle", ofType: "bundle")
         //获取bundle
-        let bundlePath = Bundle.init(path: bundle!)!.bundlePath
-        //获取Libaray地址
-        let path = FileManager.default.urls(for: .libraryDirectory, in: .userDomainMask)
+        let fromPath = Bundle.init(path: bundle!)!.bundlePath
+        //目标地址
+        let toDicPath=FileManager.default.urls(for: .libraryDirectory, in: .userDomainMask)[0].path
         //获取Sounds地址
-        let url = path[0]
-        //创建
-        try? FileManager.default.createDirectory(at: url, withIntermediateDirectories: false, attributes: nil)
+        let toPath = toDicPath + "/Sounds"
         //复制文件进去
-        if(!FileManager.default.fileExists(atPath: url.path)){
+        if(!FileManager.default.fileExists(atPath: toPath)){
             //没有复制进去就复制进去
-            try? FileManager.default.copyItem(atPath: bundlePath , toPath: url.path)
+            try? FileManager.default.copyItem(atPath: fromPath , toPath: toPath)
         }
     }
     
