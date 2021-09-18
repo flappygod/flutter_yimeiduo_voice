@@ -15,7 +15,7 @@ A new Flutter plugin.
   s.source           = { :path => '.' }
   s.source_files = 'Classes/**/*'
   s.resource_bundles = {
-    'voiceBundle' => ['Classes/voice_tts/*','Classes/voice_tts/more/*']
+    'voiceBundle' => ['Classes/Sounds/*']
   }
   s.dependency 'Flutter'
   s.platform = :ios, '10.0'

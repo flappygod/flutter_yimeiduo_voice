@@ -292,23 +292,11 @@ class YmdVoice: NSObject {
                 content.subtitle = ""
                 //不需要body
                 content.body = ""
-                //获取bundle
-                let bundle = Bundle.init(for: YmdVoice.self).path(forResource: "voiceBundle", ofType: "bundle")
-                //获取bundle
-                let bundlePath = Bundle.init(path: bundle!)!.bundlePath
-                //获取Libaray地址
-                let path = FileManager.default.urls(for: .libraryDirectory, in: .userDomainMask)
-                //获取Sounds地址
-                let url = path[0].appendingPathComponent("Sounds", isDirectory: true)
-                //创建
-                try? FileManager.default.createDirectory(at: url, withIntermediateDirectories: false, attributes: nil)
-                //复制文件进去
-                if(!FileManager.default.fileExists(atPath: url.path + "/\(string).mp3")){
-                    //没有复制进去就复制进去
-                    try? FileManager.default.copyItem(atPath: bundlePath + "/\(string).mp3", toPath: url.path + "/\(string).mp3")
-                }
+                //设置声音
                 content.sound = UNNotificationSound.init(named: UNNotificationSoundName.init("/\(string).mp3"))
+                //设置Indentifier
                 let indentifier = "categoryIndentifier\(string)"
+                //Indentifier
                 content.categoryIdentifier = indentifier
                 let trigger = UNTimeIntervalNotificationTrigger.init(timeInterval: 0.01, repeats: false)
                 let request = UNNotificationRequest.init(identifier: indentifier, content: content, trigger: trigger)
