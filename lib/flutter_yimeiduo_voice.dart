@@ -44,4 +44,22 @@ class FlutterYimeiduoVoice {
         return 5;
     }
   }
+
+  //声音类型
+  static VoiceType getVoiceType(int type) {
+    switch (type) {
+      case 1:
+        return VoiceType.qrcodePayOrder;
+      case 2:
+        return VoiceType.newOnlineOrder;
+      case 3:
+        return VoiceType.newOfflineOrder;
+      case 4:
+        return VoiceType.refundOrder;
+      case 5:
+        return VoiceType.washedOrder;
+      default:
+        return VoiceType.qrcodePayOrder;
+    }
+  }
 }
